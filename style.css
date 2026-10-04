@@ -6,6 +6,24 @@
 * {
   overflow-x: hidden;
 }
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -77,6 +95,8 @@ h1 {
 }
 .eaimage {
   max-width: 100%;
+  opacity: 0;
+  animation: opacity 0.8s ease-out forwards;
 }
 
 @media (max-width: 372px) {
@@ -101,7 +121,9 @@ h1 {
     font-size: 1.1rem;
   }
   .component {
-    min-width: 50px;
+    margin: 20px;
+    min-width: 80%;
+    max-width: 80%;
   }
 }
 @media (max-width: 200px) {
@@ -115,4 +137,12 @@ h1 {
   p {
     font-size: 0.9rem;
   }
+}
+
+.component {
+  animation: slideInLeft 5s ease-out forwards;
+}
+.bolls {
+  width: 90%;
+  padding: 5%;
 }
