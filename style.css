@@ -59,10 +59,20 @@ h1 {
 .blue {
   color: blue;
 }
+.create-with-name {
+  color: rgb(47, 49, 53);
+  margin: 10px;
+  text-align: center;
+}
 .description {
   color: rgb(47, 49, 53);
   margin: 10px;
   text-align: center;
+  box-shadow:
+    0 1px 4px #e3ecff,
+    0 12px 32px #e6ebf5cc;
+  border-radius: 20px;
+  padding: 5%;
 }
 #meta {
   display: flex;
